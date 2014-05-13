@@ -1,0 +1,20 @@
+syntax: glob
+*.pyc
+*.pyo
+*.orig
+.pydevproject
+.project
+*.db
+*.json
+*.log
+*~
+*.kpf
+*.autosave
+*.wpr
+.coverage
+local_settings.py
+basic_project/static/djangobb_forum/
+basic_project/static/admin/
+basic_project/media/
+basic_project/secret.txt
+basic_project/djangobb_index/

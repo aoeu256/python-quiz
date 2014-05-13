@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} On question {{id}} out of {{nquestions}} {% endblock %}
+
+{% block content %}
+  <h2>Status: {{status}}</h2>
+  <pre>{{message}}</pre>
+  <p>{{question.question}}</p>
+  <form action="{{question.get_absolute_url}}" method="post">{% csrf_token %}
+  <table>
+  {{ form.as_table }}
+  </table>
+  <input type="submit" value="Submit" />
+  </form>
+  <form action="{{blink}}" method="get">
+  <input type="submit" value="{{blabel}}" method="get"/>
+  </form>
+{% endblock %}
